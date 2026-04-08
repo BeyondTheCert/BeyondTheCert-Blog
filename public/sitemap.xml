@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/archives/</loc>
+    <loc>https://beyondthecert.dev/posts/allow-me-to-reintroduce-myself/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://beyondthecert.dev/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://beyondthecert.dev/tags/career/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://beyondthecert.dev/tags/homelab/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://beyondthecert.dev/tags/kubernetes/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://beyondthecert.dev/tags/platform-engineering/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://beyondthecert.dev/posts/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://beyondthecert.dev/tags/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://beyondthecert.dev/archives/</loc>
+  </url><url>
+    <loc>https://beyondthecert.dev/categories/</loc>
   </url>
 </urlset>

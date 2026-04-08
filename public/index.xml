@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <title>Beyond The Cert</title>
+    <link>https://beyondthecert.dev/</link>
+    <description>Recent content on Beyond The Cert</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://beyondthecert.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Allow Me To Reintroduce Myself</title>
+      <link>https://beyondthecert.dev/posts/allow-me-to-reintroduce-myself/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://beyondthecert.dev/posts/allow-me-to-reintroduce-myself/</guid>
+      <description>The cert gets you in the door. This is what&amp;#39;s behind it.</description>
+    </item>
   </channel>
 </rss>
