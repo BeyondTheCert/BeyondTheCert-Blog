@@ -5,6 +5,7 @@ RUN go install github.com/gohugoio/hugo@v0.146.0
 FROM hugo-builder AS builder
 WORKDIR /src
 COPY . .
+RUN git submodule update --init --recursive
 RUN hugo --minify
 
 FROM nginx:alpine
