@@ -1,0 +1,52 @@
+baseURL: "https://beyondthecert.dev"
+title: "Beyond The Cert"
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  env: production
+  title: Beyond The Cert
+  description: "Platform engineering, Kubernetes, and the journey beyond the certification."
+  author: Claude R. Hector
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Beyond The Cert 👋"
+    Content: >
+      Platform Engineer | CKA | RHCSA | Building in public.
+      This is where I document the journey beyond the certification —
+      bare metal Kubernetes, homelabs, and enterprise platform engineering.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/BeyondTheCert"
+    - name: medium
+      url: "https://cromyhector.medium.com"
+
+menu:
+  main:
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 5
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
