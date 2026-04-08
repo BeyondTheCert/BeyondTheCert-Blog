@@ -4,6 +4,9 @@ date: 2026-03-01
 draft: false
 tags: ["kubernetes", "kthw", "platform-engineering", "learning", "devops"]
 author: "Claude R. Hector"
+cover:
+  image: images/kthw1.png
+  caption: ""
 description: "I passed the CKA in January after four attempts. It taught me how to use Kubernetes. But understanding how the pieces actually fit together — that comes from building it yourself."
 ---
 

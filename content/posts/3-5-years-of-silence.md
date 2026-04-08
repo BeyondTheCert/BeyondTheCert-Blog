@@ -4,6 +4,9 @@ date: 2026-02-17
 draft: false
 tags: ["career", "platform-engineering", "kubernetes", "learning", "career-pivot"]
 author: "Claude R. Hector"
+cover:
+  image: images/3years.png
+  caption: ""
 description: "I haven't posted since August of 2022. A lot changed. Here's the story of a layoff, a rebuild, and finding my niche in platform engineering."
 ---
 

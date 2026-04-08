@@ -4,6 +4,9 @@ date: 2026-02-24
 draft: false
 tags: ["kubernetes", "cka", "platform-engineering", "career", "devops"]
 author: "Claude R. Hector"
+cover:
+  image: images/cka.png
+  caption: ""
 description: "My story: 41 → 47 → 65 → 81. Four attempts. Three failures. One certification. Here's what actually happened."
 ---
 

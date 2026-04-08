@@ -4,6 +4,9 @@ date: 2026-03-18
 draft: false
 tags: ["kubernetes", "kthw", "platform-engineering", "learning"]
 author: "Claude R. Hector"
+cover:
+  image: images/200ok.png
+  caption: ""
 description: "At work, I click a button and get a Kubernetes cluster. So I built one from scratch to understand what that button actually does."
 ---
 
