@@ -25,9 +25,6 @@ I needed operational depth. The kind you only get by breaking things and fixing 
 
 The Hardware
 
-![Genesis1 cluster hardware](/images/genesis1-cluster2.jpeg)
-*Two ThinkPad T480s as control planes. Two ThinkCentre M720q desktops as workers. This is Genesis1.*
-
 The idea evolved over a year. It started with Mischa van den Burg's YouTube videos about building clusters from old hardware. Then it became two ThinkPads as control planes and Raspberry Pis as workers. Then Dell minis. Then, when budget constraints hit, Lenovo ThinkCentre M720q tiny desktops.
 The final setup: Two Lenovo ThinkPad T480s as control planes for high availability. Two ThinkCentre M720q tiny desktops as workers — 16GB RAM each, 32GB total across workers.
 All connected via Tailscale mesh network.
