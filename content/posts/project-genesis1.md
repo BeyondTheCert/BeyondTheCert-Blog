@@ -33,7 +33,7 @@ Tailscale assigns static IPs that never change. The cluster uses Tailscale IPs f
 
 The Build
 
-![Genesis1 nodes in Freelens](/images/genesis1-freelens.png)
+![Genesis1 nodes in Freelens](/images/freelens.jpeg)
 *All 4 nodes Ready. master and master2 as control planes, worker1 and worker2 as workers. v1.32.13.*
 
 I ran kubeadm init on the first control plane. Joined the second control plane for HA. Joined both workers. Installed Calico for pod networking.
