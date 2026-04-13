@@ -1,3 +1,15 @@
+---
+title: "Project Genesis1: I Built a 4-Node Kubernetes Cluster on Bare Metal. Here's What I Learned."
+date: 2026-04-13
+draft: false
+tags: ["kubernetes", "homelab", "platform-engineering", "bare-metal", "gitops"]
+author: "Claude R. Hector"
+description: "I built a 4-node bare metal Kubernetes cluster from scratch. Two control planes, two workers, full GitOps pipeline. Here's what broke and what I learned."
+cover:
+  image: images/genesis1-cluster.jpg
+  caption: "Genesis1 — Two ThinkPad masters, two ThinkCentre workers. The blog you're reading runs on this."
+---
+
 Project Genesis1: I Built a 4-Node Kubernetes Cluster on Bare Metal. Here's What I Learned.
 At work, we provision managed Kubernetes clusters. Click a button, get a cluster. Everything abstracted. Everything handled.
 At home? I built every piece myself. Two control planes. Two workers. GitOps pipeline. Monitoring stack. The blog you're reading right now? It's running on this infrastructure.
