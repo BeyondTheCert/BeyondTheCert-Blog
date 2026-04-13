@@ -6,7 +6,7 @@ tags: ["kubernetes", "homelab", "platform-engineering", "bare-metal", "gitops"]
 author: "Claude R. Hector"
 description: "I built a 4-node bare metal Kubernetes cluster from scratch. Two control planes, two workers, full GitOps pipeline. Here's what broke and what I learned."
 cover:
-  image: images/genesis1-cluster.jpg
+  image: images/genesis1-cluster2.jpeg
   caption: "Genesis1 — Two ThinkPad masters, two ThinkCentre workers. The blog you're reading runs on this."
 ---
 
@@ -25,8 +25,8 @@ I needed operational depth. The kind you only get by breaking things and fixing 
 
 The Hardware
 
-📸 [INSERT HARDWARE PHOTO HERE — genesis1-cluster.jpg]
-Caption: Two ThinkPad T480s as control planes. Two ThinkCentre M720q desktops as workers. This is Genesis1.
+![Genesis1 cluster hardware](/images/genesis1-cluster2.jpeg)
+Caption: *Two ThinkPad T480s as control planes. Two ThinkCentre M720q desktops as workers. This is Genesis1.*.
 
 The idea evolved over a year. It started with Mischa van den Burg's YouTube videos about building clusters from old hardware. Then it became two ThinkPads as control planes and Raspberry Pis as workers. Then Dell minis. Then, when budget constraints hit, Lenovo ThinkCentre M720q tiny desktops.
 The final setup: Two Lenovo ThinkPad T480s as control planes for high availability. Two ThinkCentre M720q tiny desktops as workers — 16GB RAM each, 32GB total across workers.
@@ -36,8 +36,8 @@ Tailscale assigns static IPs that never change. The cluster uses Tailscale IPs f
 
 The Build
 
-📸 [INSERT FREELENS NODES SCREENSHOT HERE]
-Caption: All 4 nodes Ready. master and master2 as control planes, worker1 and worker2 as workers. v1.32.13.
+![Genesis1 nodes in Freelens](/images/genesis1-freelens.png)
+Caption: *All 4 nodes Ready. master and master2 as control planes, worker1 and worker2 as workers. v1.32.13.*.
 
 I ran kubeadm init on the first control plane. Joined the second control plane for HA. Joined both workers. Installed Calico for pod networking.
 Then things broke.
@@ -57,15 +57,15 @@ Then I cordoned all four nodes and unplugged the network switch to organize cabl
 The final stack:
 ComponentPurposeKubernetesOrchestrationCalicoPod networkingMetalLBLoad balancingNginx IngressTraffic routingcert-managerTLS automationArgoCDGitOpsPrometheus + GrafanaMonitoringLokiCentralized loggingSealed SecretsEncrypted secretsCloudflare TunnelPublic accessTailscaleRemote SSHHugo + GitHub ActionsBlog + CI/CD
 
-📸 [INSERT ARGOCD SCREENSHOT HERE — blog app Healthy and Synced]
-Caption: ArgoCD watching Genesis1-GitOps on GitHub. Push markdown, blog updates automatically.
+![ArgoCD blog app synced](/images/genesis1 argo.png)
+Caption: ArgoCD watching Genesis1-GitOps on GitHub. Push markdown, blog updates automatically.y.
 
 Write a markdown file. Git push. GitHub Actions builds a Docker image. ArgoCD syncs the new image. The blog updates automatically.
 
 What It Teaches
 
-📸 [INSERT GRAFANA SCREENSHOT HERE — Kubernetes/Compute Resources/Cluster dashboard]
-Caption: Real-time cluster metrics. CPU, memory, pod counts across all namespaces.
+![Grafana cluster dashboard](/images/genesis1 prometheus.png)
+Caption: *Real-time cluster metrics. CPU, memory, pod counts across all namespaces.*.
 
 CKA taught me kubectl commands and how to troubleshoot pods. It didn't teach me how Calico's BGP peering works. It didn't teach me Cloudflare's SSL modes. It didn't teach me that Tailscale and Calico conflict.
 You learn those things by running workloads on infrastructure you built. By debugging when something breaks at midnight. By reading logs until you find the one line that reveals the issue.
@@ -74,9 +74,8 @@ I expected the build to take weeks, maybe a month or two. It took five days. kub
 
 A Note On This Site
 This blog isn't hosted on Vercel or Netlify or GitHub Pages. It's a pod running on worker nodes in my apartment. When you visit beyondthecert.dev, you're hitting nginx pods on my workers, routed through Cloudflare Tunnel, deployed by ArgoCD watching GitHub.
-
-📸 [INSERT LOKI SCREENSHOT HERE — Slovakia visitor log line in Grafana Explore]
-Caption: Within the first 24 hours of going live, Loki captured a real visitor from Slovakia browsing the blog.
+![Loki logs showing Slovakia visitor](/images/genesis1 loki.jpeg)
+*Within the first 24 hours of going live, Loki captured a real visitor from Slovakia browsing the blog.*
 
 Within the first 24 hours of going live, Loki — the logging stack running on the cluster — captured a visitor from Slovakia browsing the blog. Real logs. Real visitor. Real cluster.
 The blog is a portfolio piece. The infrastructure is a portfolio piece. Both prove capability at the same time.
