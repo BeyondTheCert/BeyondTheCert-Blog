@@ -1,6 +1,6 @@
 ---
 title: "TC-003: Ten Bugs Stood Between My Playbooks and a Public Repo"
-date: 2026-06-23
+date: 2026-06-22
 draft: false
 tags: ["kubernetes", "homelab", "ansible", "calico", "networking", "automation"]
 author: "Claude R. Hector"
